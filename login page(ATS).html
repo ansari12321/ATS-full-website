@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset=UTF-8 >
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sign Up and Sign In</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+background-color: #f4f4f4;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+height: 700px;
+
+background-image: url('images.jpg');
+
+background-size: cover;
+
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
+}
+
+form {
+
+background-color: lightskyblue;
+
+padding: 20px;
+
+border-radius: 8px;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+width: 500px;
+
+text-align: center;
+
+input {
+
+width: 100%;
+
+padding: 10px;
+
+margin: 8px 0;
+
+box-sizing: border-box;
+
+}
+
+button {
+
+background-color:green;
+
+color: #fff;
+
+padding: 10px;
+
+border: none;
+
+border-radius: 5px;
+
+cursor: pointer;
+background-color: #45a049;
+
+} </style>
+
+</head>
+
+<body>
+
+<form id="signupForm">
+
+<h2>SignUp</h2>
+
+<label for="signupUsername">Username: </label>
+
+<input type="text" id="signupUsername" name="signupUsername" required>
+
+<label for="signupPassword">Password:</label>
+
+<input type="password" id="signupPassword" name="signupPassword" required>
+
+<button type="button" onclick="signup()">Sign Up</button>
+
+</form>
+
+<form id="loginForm" style="margin-left: 20px;">
+
+<h2>Login</h2>
+
+<label for="loginUsername">Username:</label>
+
+<input type="text" id="loginUsername" name="loginUsername" required> <label for="loginPassword">Password:</label>
+
+<input type="password" id="loginPassword" name="loginPassword" required>
+<button type="button" onclick="login()">Login</button>
+
+</form>
+
+<script>
+
+function signup() {
+
+var retval = confirm("Do you want to continue ?"); }
+
+function login() {
+
+var retval = confirm("Do you want to continue ?");
+
+if( retval == true ){
+
+document.write "User wants to continue!"); return true;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
